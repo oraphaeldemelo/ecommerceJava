@@ -24,6 +24,11 @@ public class ProductSchema extends AbstractEntitySchema<Long> {
         this.name = product.getName();
         this.price = product.getPrice();
     }
+    public ProductSchema(Long id, String name, Double price){
+        this.setId(id);
+        this.name = name;
+        this.price = price;
+    }
     public ProductSchema() {
         super();
     }
